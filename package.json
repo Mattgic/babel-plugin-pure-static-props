@@ -14,6 +14,8 @@
     "@babel/core": "^7.10.5",
     "@babel/plugin-proposal-class-properties": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.10.4",
+    "babel-jest": "^26.1.0",
     "babel-plugin-tester": "^9.2.0",
     "jest": "^26.1.0",
     "prettier": "^1.18.2",
@@ -25,16 +27,14 @@
   },
   "scripts": {
     "clean": "rimraf lib",
-    "fomat": "prettier --write **/*.js",
+    "format": "prettier --write **/*.js",
     "build": "babel src -d lib",
-    "watch": "yarn build -w",
     "test": "jest",
-    "test:watch": "yarn test -- --watch",
-    "prepublish": "yarn clean && yarn build"
+    "test:watch": "npm run test -- --watch",
+    "prepublish": "npm run clean && npm run build"
   },
   "keywords": [
     "react",
-    "styled-components",
     "tree shaking",
     "code splitting",
     "static properties",

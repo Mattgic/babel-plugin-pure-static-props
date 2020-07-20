@@ -5,9 +5,19 @@ Object.defineProperty(exports, '__esModule', {
 });
 exports.default = void 0;
 
-var Code = function Code() {
-  return <div>Simply hello !</div>;
+var _react = _interopRequireDefault(require('react'));
+
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
+
+var Simple = () => {
+  return /*#__PURE__*/ _react.default.createElement(
+    'div',
+    null,
+    'Simply hello !'
+  );
 };
 
-var _default = Code;
+var _default = Simple;
 exports.default = _default;

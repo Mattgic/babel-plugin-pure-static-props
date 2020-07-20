@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 
 const Simple2 = () => {
   return <div>Simply hello !</div>;

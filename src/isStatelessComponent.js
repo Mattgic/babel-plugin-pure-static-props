@@ -14,7 +14,8 @@ function isJSXElementOrReactCreateElement(path) {
       if (
         callee.matchesPattern('React.createElement') ||
         callee.matchesPattern('React.cloneElement') ||
-        callee.node.name === 'cloneElement'
+        callee.node.name === 'cloneElement' ||
+        callee.node.name === 'jsx'
       ) {
         visited = true;
       }
