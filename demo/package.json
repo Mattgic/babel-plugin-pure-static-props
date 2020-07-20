@@ -1,6 +1,0 @@
-{
-  "name": "babel-pugin-pure-static-props-demo",
-  "scripts": {
-    "transpile": "../node_modules/.bin/babel demoComponents.js"
-  }
-}
